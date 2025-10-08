@@ -1,5 +1,5 @@
 # undo-redo
-A simple, customizable example of implementing Undo / Redo functionality in React Flow . Includes the core logic and helper functions you can copy or adapt for your own projects — no package installation required.
+A simple, customizable and free example of implementing Undo / Redo functionality in React Flow . Includes the core logic and helper functions you can copy or adapt for your own projects — no package installation required.
 
 
 This repository contains a **custom implementation** of Undo and Redo functionality for [React Flow](https://reactflow.dev/).  
@@ -138,6 +138,7 @@ const resetHistory = useCallback(() => {
 ```
 
 💡 Why:
+- Use this function when saving a workflow by API so it resets the both stacks.
 - When reloading or clearing a workflow, we must reset both stacks to avoid old history interfering.
 - This creates a clean initial snapshot representing the current flow.
 
@@ -258,13 +259,54 @@ const handleDeleteNode = useCallback(
 >
     <Undo className="h-4" />
 </Button>
-                    <Button
-                        disabled={!canRedo}
-                        onClick={redo}
-                        variant="ghost"
-                        className={`border p-2 ${
-                            canRedo ? "border-red-400" : "border-input"
-                        }`}
-                    >
-                        <Redo className="h-4" />
-                    </Button>
+<Button
+      disabled={!canRedo}
+      onClick={redo}
+      variant="ghost"
+      className={`border p-2 ${
+      canRedo ? "border-red-400" : "border-input"
+      }`}
+>
+      <Redo className="h-4" />
+</Button>
+```
+In last use handleAddNode and handleDeleteNode functions in ReactFlow Component
+
+## 🧩 Final Notes
+
+This implementation is a **fully custom setup**, carefully designed with every important detail in mind — from React Flow’s internal state handling and update timing to preventing duplicate history entries and managing drag operations.  
+It’s built to work **smoothly and reliably** with complex workflows while staying **easy to customize** for your own project needs.
+
+You can easily:
+- 🧠 Extend it to track selections, viewport, or custom node data  
+- 🎨 Adjust the history depth or debounce timing  
+- ⌨️ Add keyboard shortcuts like <kbd>Ctrl</kbd> + <kbd>Z</kbd> / <kbd>Ctrl</kbd> + <kbd>Y</kbd>  
+- 🧩 Integrate it into any React Flow-based visual editor or builder  
+
+React Flow has since introduced **its own Undo/Redo features** in newer versions — but this repository remains a **fully open, transparent, and dependency-free** example showing exactly how to build such functionality yourself.  
+
+This project is **free to use, modify, and learn from** — whether you’re building an automation tool, workflow builder, or node-based editor.
+
+---
+
+### 💬 Support & Collaboration
+
+If you need help implementing or customizing it for your project, feel free to reach out or open an issue — I’ll be happy to help!
+
+👤 **Author:** [@Abdul Rafay](https://github.com/abdulrafay720)  
+📫 **Contact:** Open a GitHub issue or Mail me directly for collaboration or support at rafay12105@gmail.com.
+
+---
+
+## ⭐ Give It a Star
+
+If this project helped you, consider giving it a **star** on GitHub — it helps others discover it and supports continued improvements!  
+👉 [Star this repo](https://github.com/abdulrafay720/-undo-redo/stargazers)
+
+## 🪪 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+
+---
+
+Built with ❤️ by [Abdul Rafay](https://github.com/abdulrafay720)
