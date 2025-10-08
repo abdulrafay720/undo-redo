@@ -1,9 +1,9 @@
 # undo-redo
-A simple, customizable and free example of implementing Undo / Redo functionality in React Flow . Includes the core logic and helper functions you can copy or adapt for your own projects — no package installation required.
+A simple, customizable, and completely free example of implementing Undo / Redo functionality in React Flow.
+Unlike [React Flow’s](https://reactflow.dev/pro) official undo/redo feature — which is part of their paid Pro version — this repository provides a fully open-source, custom implementation you can use in any project.
 
-
-This repository contains a **custom implementation** of Undo and Redo functionality for [React Flow](https://reactflow.dev/).  
-It’s not a library — it’s a working example and custom functions you can copy into your own project to add state history and undo/redo logic.
+This is not a plug-and-play library, but rather a set of clear, well-documented functions and hooks showing exactly how to build undo and redo functionality yourself.
+You can copy the code, modify it to your needs, and integrate it directly into your React Flow setup — no package installation or subscription required.
 
 ## 🎯 Purpose
 
