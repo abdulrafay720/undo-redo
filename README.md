@@ -301,7 +301,7 @@ If you need help implementing or customizing it for your project, feel free to r
 ## ⭐ Give It a Star
 
 If this project helped you, consider giving it a **star** on GitHub — it helps others discover it and supports continued improvements!  
-👉 [Star this repo](https://github.com/abdulrafay720/-undo-redo/stargazers)
+👉 [Star this repo](https://github.com/abdulrafay720/undo-redo/stargazers)
 
 ## 🪪 License
 
